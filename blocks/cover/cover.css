@@ -1,0 +1,35 @@
+@import url('./__title/cover__title.css');
+@import url('./__subtitle/cover__subtitle.css');
+@import url('./__bg/cover__bg.css');
+
+.cover {
+    max-width: 1184px;
+    max-height: 594px;
+    margin: 102px auto 0 auto;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        opacity: 0.5;
+}
+
+.cover:hover:before {
+    opacity: 0.8;
+}
+
+@media screen and (max-width : 767px) {
+    .cover {
+        margin-top: 48px;
+    }
+}

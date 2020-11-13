@@ -1,0 +1,10 @@
+.comment__container{
+    margin: 0;
+}
+
+@media screen and (max-width : 1023px){
+    .comment__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
